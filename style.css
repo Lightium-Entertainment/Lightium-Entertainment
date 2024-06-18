@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    background-color: #0b2447;
+    line-height: 1.8;
+    background: rgba(11, 36, 71, 0.85) url('img/LogoLightium.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+/* Improved Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0b2447 0%, #1f4b9d 100%);
+    color: #fff;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-background {
+    background: url('images/LogoLightium.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background color for nav */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    nav ul li ul {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+main {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto; /* Center images */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f4b9d;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+Social media 
+
+/* Social Media Styles */
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1f4b9d;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #0b2447;
+}
